@@ -1,0 +1,22 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon-chat {
+    background-image: url(../assets/icons/chat.svg);
+    width: 52px;
+    height: 52px;
+}
+
+.icon-next {
+    background-image: url(../assets/icons/next.svg);
+    width: 16px;
+    height: 24px;
+}
+
+.icon-checkmark {
+    background-image: url(../assets/icons/checkmark.svg);
+    width: 21px;
+    height: 21px;
+}

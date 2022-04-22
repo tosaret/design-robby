@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Robby</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="header-left">
+            <div class="menu-toggle">
+                <a data-bs-toggle="offcanvas" href="#leftMenu" role="button" aria-controls="leftMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Menu
+                </a>
+            </div>
+            <a href="#" class="navbar-brand">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <button>
+                <i class="icon icon-chat"></i>
+                <span class="live-chat-text">TALK TO A REAL PERSON</span>
+            </button>
+            <button onclick="openOrder()" class="open-order">
+                <i class="icon icon-next"></i>
+                <span class="live-chat-text">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container-fluid main-content">
+
+
+
+        <div class="order-block" id="orderBlock">
+            <div class="title">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="" onclick="closeOrder()"><img class="order-prev" src="./assets/icons/prev.svg" alt="" /></a>
+                    </div>
+                    <div class="col-lg-4">Ordering Options</div>
+                    <div class="col-lg-4">
+                        <a href="" onclick="closeOrder()"><img class="order-close" src="/assets/icons/plus.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 80"><g fill="none" fill-rule="evenodd"><path d="M0 0h152v80H0z"></path><path d="M106.034 22.236A23.899 23.899 0 01121 17c2.228 0 4.385.304 6.433.872m15.884 14.28A23.936 23.936 0 01145 41c0 13.255-10.745 24-24 24a23.9 23.9 0 01-15.08-5.328" stroke="#a639b2" stroke-linecap="round" stroke-width="2"></path><g transform="translate(110 25)"><g stroke="#a639b2" stroke-linecap="round"><path d="M3 15a9 9 0 0018 0V5a5 5 0 00-5-5H7a2 2 0 00-2 2 2 2 0 00-2 2z" stroke-linejoin="round" stroke-width="1.8"></path><g stroke-width="1.6"><path d="M8.967 18.875c.708.71 1.789 1.162 2.998 1.162.841 0 1.52-.179 2.035-.537"></path><path d="M15 9.5l2.5.5zm-8.5 0H9zM3 6c2.667.333 4.167-.667 4.5-3C10.167 6.667 14 7.667 19 6" stroke-linejoin="round"></path></g></g><circle cx="16.065" cy="12.792" fill="#a639b2" r="1"></circle><circle cx="7.875" cy="12.792" fill="#a639b2" r="1"></circle><g stroke="#a639b2" stroke-linecap="round" stroke-width="1.8"><path d="M9 24v3H3.78A3.78 3.78 0 000 30.78V31m15-7v3h5.22A3.78 3.78 0 0124 30.78V31" stroke-linejoin="round"></path><path d="M9.015 30.004c.684.605 1.768.996 2.988.996 1.23 0 2.323-.398 3.006-1.012"></path></g></g><g stroke="#a639b2" stroke-width="1.8"><path d="M144 13.9c1.96 0 3.736.795 5.02 2.08 1.285 1.284 2.08 3.06 2.08 5.02s-.795 3.736-2.08 5.02A7.078 7.078 0 01144 28.1l-2.412.002c-2.438 2.829-4.523 4.528-6.316 4.974.488-1.575.848-3.08.921-4.5.012-.233.017-.468.014-.706a7.117 7.117 0 01-4.02-2.792A7.064 7.064 0 01130.9 21c0-1.96.795-3.736 2.08-5.02A7.078 7.078 0 01138 13.9z"></path><path d="M140 18v6h3" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M45.966 22.236A23.899 23.899 0 0031 17a24.05 24.05 0 00-5.985.752M9.43 30.464A23.903 23.903 0 007 41c0 13.255 10.745 24 24 24a23.9 23.9 0 0015.08-5.328" stroke="#a639b2" stroke-linecap="round" stroke-width="2"></path><g transform="translate(18 23)"><g stroke="#a639b2" stroke-linecap="round"><path d="M19.5 11l-.369-2.315A2 2 0 0017.156 7H6.844a2 2 0 00-1.975 1.685L4.5 11" stroke-linejoin="round" stroke-width="1.6"></path><path d="M12 0c5.523 0 10 5.149 10 11.5 0 1.076-.129 2.118-.369 3.106A2.5 2.5 0 0120 19l-.004.25A8 8 0 014 19l-.164-.005a2.5 2.5 0 01-1.466-4.39A13.073 13.073 0 012 11.5C2 5.149 6.477 0 12 0z" stroke-linejoin="round" stroke-width="1.8"></path><g stroke-width="1.6"><path d="M9.868 22.311c.755.46 1.454.701 2.097.726.69-.025 1.374-.267 2.053-.726"></path><path d="M15 12.5l2.5.5zm-8.5.5l2.5-.5z" stroke-linejoin="round"></path></g></g><circle cx="16.065" cy="15.792" fill="#a639b2" r="1"></circle><circle cx="7.875" cy="15.792" fill="#a639b2" r="1"></circle><g stroke="#a639b2" stroke-linecap="round" stroke-width="1.8"><path d="M9 27v3H3a3 3 0 00-3 3m15-6v3h6a3 3 0 013 3" stroke-linejoin="round"></path><path d="M9.015 33.004c.684.605 1.768.996 2.988.996 1.23 0 2.323-.398 3.006-1.012"></path></g></g><g stroke="#a639b2" stroke-width="1.8"><path d="M14 9.9c1.96 0 3.736.795 5.02 2.08A7.078 7.078 0 0121.1 17a7.104 7.104 0 01-6.192 7.043c.033.312.077.609.13.89.226 1.205.718 2.598 1.486 4.174-2.59-.085-4.973-1.853-7.544-5.004L8 24.1a7.078 7.078 0 01-5.02-2.08C1.695 20.736.9 18.96.9 17s.795-3.736 2.08-5.02A7.078 7.078 0 018 9.9z"></path><path d="M7 20l1-6 3 4 3-4 1 6" stroke-linecap="round" stroke-linejoin="round"></path></g><path d="M82.34 10.649A31.134 31.134 0 0076 10c-17.12 0-31 13.88-31 31s13.88 31 31 31 31-13.88 31-31a30.884 30.884 0 00-7.844-20.611" stroke="#a639b2" stroke-linecap="round" stroke-width="2"></path><g transform="translate(59 17)"><g stroke="#a639b2" stroke-linecap="round"><path d="M17 35c6.627 0 12-5.373 12-12v-8c-2.833-.933-4.817-2.9-5.951-5.9.9-.45 1.8-1.781 2.151-2.25C20.7 12.25 13.967 14.633 5 14v9c0 6.627 5.373 12 12 12z" stroke-linejoin="round" stroke-width="2"></path><path d="M13.71 29.04c.907 1.013 2.29 1.66 3.84 1.66 1.615 0 3.05-.703 3.954-1.792M9.45 17.65c.42-.509 1.8-1.35 3.6-.45m12.6.45c-.42-.51-1.8-1.35-3.6-.45" stroke-width="1.8"></path></g><circle cx="23.85" cy="20.35" fill="#a639b2" r="1.35"></circle><path d="M29 32l.515-.172a4 4 0 002.72-3.447C32.745 22.525 33 18.398 33 16c0-8.55-7.302-16-16-16S1 7.302 1 16c0 2.398.255 6.525.765 12.38a4 4 0 002.72 3.448L5 32" stroke="#a639b2" stroke-linecap="round" stroke-width="2"></path><circle cx="11.25" cy="20.35" fill="#a639b2" r="1.35"></circle><g stroke="#a639b2" stroke-linecap="round"><path d="M13 35v4H5.4A5.4 5.4 0 000 44.4v.6m21-10v4h7.6a5.4 5.4 0 015.4 5.4v.6" stroke-linejoin="round" stroke-width="2"></path><path d="M13.015 42.02A4.992 4.992 0 0017 44c1.641 0 3.098-.79 4.01-2.012" stroke-width="1.8"></path></g></g><g stroke="#a639b2" stroke-width="1.8"><path d="M106 .9c1.96 0 3.736.795 5.02 2.08 1.285 1.284 2.08 3.06 2.08 5.02s-.795 3.736-2.08 5.02A7.078 7.078 0 01106 15.1l-7.122.002c-2.706 3.197-5.211 5.169-7.56 5.83.964-1.706 1.674-3.321 1.932-4.803.058-.333.097-.68.116-1.04a7.08 7.08 0 01-5.584-2.274A7.073 7.073 0 0185.9 8c0-1.96.795-3.736 2.08-5.02A7.078 7.078 0 0193 .9z"></path><g stroke-linecap="round"><path d="M94 5l5 6m-5 0l5-6"></path><path d="M103 5v6h3" stroke-linejoin="round"></path></g></g></g></svg>
+                            <h3>Invite Your Group</h3>
+                            <p>Your group enters their sizes and info</p>
+                            <p>Pay for your group or split payments</p>
+                            <p>Ship to one or multiple addresses</p>
+                        </div>
+                        <button class="default">Invite Your Group</button>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <svg viewBox="0 0 152 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h152v80H0z"></path><g stroke="#a639b2"><circle cx="67" cy="68" r="6" stroke-width="2"></circle><circle cx="103" cy="68" r="6" stroke-width="2"></circle><g stroke-linecap="round" stroke-linejoin="round"><path d="M117 57H62.84a4.5 4.5 0 01-4.489-4.826l3.415-46.956A3 3 0 0058.774 2H50" stroke-width="2"></path><path d="M48 15H16" stroke-width="2"></path><path d="M113.5 19c-8.64.843-16.973 3.01-25 6.5S74.306 32.823 70 37" stroke-width="1.6"></path><path d="M47 28H22" stroke-width="2"></path><path d="M46 41H29" stroke-width="2"></path><path d="M45 54H35" stroke-width="2"></path><path d="M61.5 11H127l-9 32-59 5" stroke-width="2"></path></g></g></g></svg>
+                            <h3>Order Now</h3>
+                            <p>Enter your order details and place your order</p>
+                            <p>Choose FREE or RUSH delivery to one address</p>
+                            <p>Ship to one or multiple addresses</p>
+                        </div>
+                        <button class="primary">Order Now</button>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <svg viewBox="0 0 152 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h152v80H0z"></path><g stroke="#a639b2" transform="rotate(-15 92.383 -105.521)"><g stroke-linecap="round" stroke-linejoin="round"><path d="M30 10h10v28H30z" stroke-width="1.6"></path><path d="M28 38h4l2 9h-6z" stroke-width="1.6"></path><g stroke-width="2"><path d="M13 38h15v14.5a7.5 7.5 0 01-15 0zm27 0H16C8.268 38 2 31.732 2 24s6.268-14 14-14h24"></path><path d="M40 10l15-8v44l-15-8"></path></g></g><rect height="1" rx=".5" width="17" x="68.5" y="23.5"></rect><rect height="1" rx=".5" transform="rotate(-22 73.536 5.187)" width="16" x="65.536" y="4.687"></rect><rect height="1" rx=".5" transform="scale(1 -1) rotate(-22 -146.709 0)" width="16" x="65.536" y="42.311"></rect><g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"><path d="M16 13C9.925 13 5 17.925 5 24"></path><path d="M51 43.5v-16"></path><path d="M51 9.5v-5"></path></g></g></g></svg>
+                            <h3>Start a Fundraiser</h3>
+                            <p>Create a sharable campaign page to spread the word</p>
+                            <p>Set prices, sell gear, and even accept donations</p>
+                            <p>Ship to one or multiple addresses</p>
+                        </div>
+                        <button class="default">Start Fundraiser</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 description-content">
+                <h3>Hanes Authentic T‑shirt</h3>
+                <p class="description-text">Hanes famous Authentic design = ultimate comfort. Our favorite classic tee, the Hanes Authentic collection is great for any group. Available in a wide range of sizes with a comfortable fit, this product will meet the needs of your group at a price you’ll love. Looking for a different color or size?</p>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Size & Fit Guide
+                        </button>
+                        </h4>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    Youth Sizes<br />
+                                    YXS | YS | YM | YL | YXL<br />
+                                    Adult Sizes<br />
+                                    S | M | L | XL | 2XL | 3XL | 4XL
+                                </div>
+                                <div class="col-md-4">
+                                    Fit:<br />
+                                    Standard fit: straight fit on body, chest, & arms<br /><br />
+                                    <img src="./assets/images/sizing.svg" alt="">
+                                    <a href="#" class="sizing-link">View Sizing Guide</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Shipping
+                        </button>
+                        </h4>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    2 week Standard Delivery<br />
+                                    Get it by Fri, May. 6<br />
+                                    <br />
+                                    1 week Rush Delivery<br />
+                                    Get it by Fri, Apr. 29
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Free Shipping</h4>
+                                    <br />
+                                    <img src="./assets/images/box.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            More Details
+                        </button>
+                        </h4>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Screen printing or high-quality digital printing</li>
+                                <li>6 oz. 100% pre-shrunk cotton</li>
+                                <li>Heathered colors; Ash, Light Steel, Oxford Grey and Safety colors are poly/cotton blends</li>
+                                <li>Tear away neck label</li>
+                                <li>Self fabric neck tape for added comfort</li>
+                                <li>Double-needle stitch on sleeve and bottom hem and shoulder-to-shoulder tape for added durability</li>
+                                <li>Available up to 6XL in select colors, call for more details</li>
+                                <li>Note: as Hanes transitions from tagless labels to tear away tags, some products will be shipped tagless. If you have questions about a specific color, please contact customer service at 800-293-4232.</li>
+                                <li>Minimum Quantity: 1</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="printAreasHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#printAreas" aria-expanded="false" aria-controls="printAreas">
+                            Special Print Areas
+                        </button>
+                        </h4>
+                        <div id="printAreas" class="accordion-collapse collapse" aria-labelledby="printAreasHeading">
+                        <div class="accordion-body">
+                            For orders of 6 or more, we offer four different styles for sleeve print designs.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 description-slideshow">
+                <!-- CAROUSEL -->
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <img src="./assets/images/img1.jpeg" alt=""> </div>
+                        <div class="carousel-item"> <img src="./assets/images/img2.jpeg" alt=""> </div>
+                        <div class="carousel-item"> <img src="./assets/images/img3.jpeg" alt=""> </div>
+                        <div class="carousel-item"> <img src="./assets/images/img4.jpeg" alt=""> </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#slideshow" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
+                    <a class="carousel-control-next" href="#slideshow" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+
+                    <ol class="carousel-indicators list-inline">
+                        <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#slideshow"> <img src="./assets/images/img1.jpeg" class="img-fluid"> </a> </li>
+                        <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#slideshow"> <img src="./assets/images/img2.jpeg" class="img-fluid"> </a> </li>
+                        <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#slideshow"> <img src="./assets/images/img3.jpeg" class="img-fluid"> </a> </li>
+                        <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#slideshow"> <img src="./assets/images/img4.jpeg" class="img-fluid"> </a> </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEFT SIDE MENU -->
+    <div class="left-menu offcanvas offcanvas-start" tabindex="-1" id="leftMenu" aria-labelledby="leftMenuLabel">
+        <h6>Menu</h6>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+        <div class="offcanvas-body">
+            <ul class="left-menu-links">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11"><path d="M7.5 5.7c.7-.6 1.1-1.4 1.1-2.4 0-1.7-1.4-3-2.9-3-1.7 0-2.9 1.4-2.9 3 0 1 .4 1.8 1.1 2.4C1.9 6.2.5 7.3.5 8.5v1.6c0 .5.4.9.9.9h8.2c.5 0 .9-.4.9-.9V8.5c.1-1.2-1.3-2.3-3-2.8zM3.5 3c0-1.1 1-2.1 2.1-2.1 1.2 0 2.1.9 2.1 2.1s-.9 2.1-2.1 2.1c-1.1 0-2.1-.9-2.1-2.1zm-2 7V8.4c0-.8 1.7-2.1 4-2.1s4 1.3 4 2.1V10h-8z"></path></svg>
+                        Your Account
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg"><g id="Hamburger-Nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="LBP---Product-Summary---Default-Copy-3" transform="translate(-44 -40)" fill="#FFF"><g id="noun_565770_cc" transform="translate(44 40)"><g id="shirt"><g id="Group"><path d="M3.348 0a.478.478 0 00-.338.14L.14 3.01a.478.478 0 000 .676l1.913 1.913c.187.187.49.187.676 0l.619-.625v5.548c0 .264.214.478.478.478h5.74a.478.478 0 00.477-.478l.005-5.548.614.625c.187.187.49.187.676 0l1.913-1.913a.478.478 0 000-.676L10.381.14a.478.478 0 00-.338-.14H8.3a.478.478 0 00-.458.342 1.196 1.196 0 01-2.293 0A.478.478 0 005.091 0H3.348zM4.92 1.217a2.153 2.153 0 003.547.007c.126-.184.154-.267.154-.267h1.217l2.402 2.387-1.239 1.241-1.098-1.097a.478.478 0 00-.816.338v6.217H4.304V3.826a.478.478 0 00-.816-.338L2.394 4.587 1.157 3.346 3.539.956h1.244s.012.08.137.26z" id="Shape"></path></g></g></g></g></g></svg>
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g id="Hamburger-Nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="LBP---Product-Summary---Default-Copy-3" transform="translate(-45 -130)" fill="#FFF"><g id="noun_441070_cc" transform="translate(45 130)"><g id="Group"><path d="M9.835 0h-8.8C.465 0 0 .464 0 1.035v8.8c0 .571.464 1.036 1.035 1.036h8.8c.571 0 1.036-.465 1.036-1.036v-8.8C10.87.465 10.406 0 9.835 0zm0 4.141H5.176V1.035h4.66v3.106zm-8.8-3.106h3.106v8.8H1.035v-8.8zm4.141 8.8V5.176h4.66v4.66h-4.66z" id="Shape"></path></g></g></g></g></svg>
+                        Design Templates
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14"><path id="Stroke-1" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M6 5.4L10.8 3v7.4L6 12.8l-4.8-2.4V3z"></path><path id="Stroke-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M9.8 1.2L6 3.2l-3.8-2"></path><path id="Stroke-5" d="M6 5.4v7.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg"><g id="Hamburger-Nav" stroke="none" stroke-width="1" fill-rule="evenodd"><g id="LBP---Product-Summary---Default-Copy" transform="translate(-43 -306)"><g id="noun_565773_cc" transform="translate(43 306)"><g id="Group"><path d="M7.096.586C3.69.57.886 3.39.886 6.798v3.374a1.53 1.53 0 001.023 1.443v.806a3.102 3.102 0 003.089 3.089c0 .57.453 1.024 1.024 1.024H7.75c.57 0 1.024-.453 1.024-1.024v-1.024c0-.57-.453-1.024-1.024-1.024H6.039c-.571 0-1.024.453-1.024 1.024A2.063 2.063 0 012.95 12.42v-.705h.621c.235 0 .42-.185.42-.42V7.184a.416.416 0 00-.42-.42H2.43c-.185 0-.353.034-.52.1v-.066c0-2.837 2.332-5.188 5.17-5.188 2.836.017 5.136 2.317 5.136 5.154v.1c-.168-.05-.336-.1-.52-.1h-1.142a.416.416 0 00-.42.42v4.13c0 .234.185.419.42.419h1.142a1.54 1.54 0 001.544-1.545V6.764c0-3.391-2.753-6.16-6.144-6.178zM6.04 14.47h1.729v1.024h-1.73V14.47zm-3.61-6.681h.52v2.887h-.52a.523.523 0 01-.52-.52V8.308c0-.285.235-.52.52-.52zm9.787 2.384c0 .285-.235.52-.52.52h-.52V7.788h.52c.285 0 .52.235.52.52v1.864z" id="Shape"></path></g></g></g></g></svg>
+                        Help
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
