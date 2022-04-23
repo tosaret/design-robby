@@ -88,8 +88,9 @@ button.primary {
 
 
 .header-buttons {
+    height: 60px;
     line-height: 60px;
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
 }
 
 .header-buttons .icon {
@@ -113,6 +114,7 @@ button.primary {
     margin: 0 0 0 25px;
     float: right;
 }
+
 .header-buttons .open-order i {
     margin-top: 17px;
     margin-right: 5px;
@@ -200,9 +202,9 @@ button.primary {
     color: #fff;
     font-size: .579rem;
     padding-top: 15px;
+    background-image: url(../assets/icons/close-white.svg);
     background-size: 15px;
     background-position: center top;
-    filter: grayscale(1) brightness(2);
 
 }
 
@@ -212,6 +214,203 @@ button.primary {
     background-size: cover;
     height: calc(100vh - 60px);
     position: relative;
+}
+
+.products-modal .modal-dialog {
+    max-width: 90%;
+}
+
+.products-modal .modal-header {
+    height: 32px;
+    line-height: 32px;
+    background: #f6f6f6;
+    font-size: .594rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+    border: none;
+}
+
+.products-modal .modal-header h5 {
+    margin: 0 auto;
+    font-size: .894rem;
+}
+
+.products-modal .modal-header .btn-close {
+    margin: 0;
+}
+
+.products-modal .modal-content {
+    background-color: #f6f6f6;
+    border-radius: 0;
+    border: none;
+}
+
+.products-modal .modal-body {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.products-modal .search-filters {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #e1e1e1;
+    padding: 15px 15px 0;
+}
+
+.products-modal .search-filters hr {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.products-modal .search-filters .filter-toggle {
+    float: left;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.products-modal .search-filters h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.products-modal .search-filters input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: #ccc;
+    width: 100%;
+    font-weight: 100;
+}
+
+.products-modal .filter-sorting {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.products-modal .filter-sorting a {
+    font-size: 16px;
+    color: #444;
+    text-decoration: none;
+}
+
+.products-modal .filter-sorting .icon-filter {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.products-modal .filter-sorting .icon-sort {
+    position: relative;
+    margin-right: 10px;
+}
+
+.products-modal .breadcrumbs {
+    margin: 1rem 0 1.5rem;
+    padding: 0 10px;
+}
+
+.products-modal .filters {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #e1e1e1;
+    padding: 15px;
+}
+
+.products-modal .filters .accordion-body {
+    overflow: hidden;
+}
+
+.products-modal .filters .choose-color {
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    margin: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+.products-modal .filters .choose-checkbox label {
+    display: block;
+}
+
+.products-modal .filters input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.products-modal .filters .choose-checkbox label {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.products-modal .filters label:before {
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
+}
+
+.products-modal .filters input:checked + label:before {
+    background: blue url(../assets/icons/tick.svg) center no-repeat;
+    background-size: 20px auto;
+}
+
+.products-modal .item {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #e1e1e1;
+}
+
+.products-modal .item h6 {
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20.8px;
+    text-align: center;
+    height: 32px;
+    padding: 0 5px;
+    margin: 15px 0;
+}
+
+.products-modal .item .star-rating {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+
+.products-modal .item .star-rating .fa-star {
+    color: #ccc;
+}
+
+.products-modal .item .star-rating .fa-star.checked {
+    color: orange;
+}
+
+.products-modal .item .props {
+    color: #444;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: right;
+}
+
+.products-modal .item .props .col-md-6:last-child {
+    text-align: left;
+    border-left: 1px solid #ccc;
+}
+
+.products-modal .item p {
+    padding: 0.3rem 0 1rem;
+    text-align: center;
+    font-size: 14px;
 }
 
 .main-content .order-block {
@@ -282,7 +481,7 @@ button.primary {
     background-size: 21px;
 }
 
-.main-content .order-block .content button{
+.main-content .order-block .content button {
     width: 100%;
     max-width: 250px;
 }
@@ -393,4 +592,24 @@ button.primary {
 
 .accordion .accordion-body {
     padding-top: 2rem;
+}
+
+@media (max-width: 767px) {
+   .main-content .order-block {
+       display: none;
+       position: fixed;
+       z-index: 999;
+       margin: 0;
+       height: 100%;
+       overflow-x: hidden;
+       overflow-y: scroll;
+   }
+
+   .main-content .order-block .col-md-4 {
+       margin-bottom: 50px;
+   }
+
+   .description-content {
+       padding: 2rem;
+   }
 }

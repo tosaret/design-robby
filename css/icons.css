@@ -20,3 +20,16 @@
     width: 21px;
     height: 21px;
 }
+
+.icon-filter {
+    background-image: url(../assets/icons/filter.svg);
+    width: 20px;
+    height: 18px;
+    background-size: 20px 18px;
+}
+
+.icon-sort {
+    background-image: url(../assets/icons/sort.svg);
+    width: 20px;
+    height: 18px;
+}
