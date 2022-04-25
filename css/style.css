@@ -617,6 +617,8 @@ button.primary {
 
    .navbar-brand {
        margin-right: 0;
+       width: 62px;
+       overflow: hidden;
    }
 
    .header-buttons {
