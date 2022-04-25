@@ -52,7 +52,7 @@ button.primary {
 .menu-toggle {
     float: left;
     height: 1.5rem;
-    margin: 0.5rem 1rem;
+    margin: 1rem;
     position: relative;
     width: 1.5rem;
     font-size: .579rem;
@@ -76,6 +76,7 @@ button.primary {
 }
 
 .navbar-brand {
+    float: left;
     height: 100%;
     border-left: 1px solid #ccc;
 }
@@ -414,6 +415,7 @@ button.primary {
 }
 
 .main-content .order-block {
+    display: none;
     position: absolute;
     right: -1000px;
     top: 0;
@@ -423,7 +425,7 @@ button.primary {
     width: 100%;
     max-width: 750px;
     text-align: center;
-    transition: right 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .main-content .order-block .title {
