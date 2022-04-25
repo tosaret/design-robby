@@ -615,7 +615,15 @@ button.primary {
        padding: 2rem;
    }
 
+   .navbar-brand {
+       margin-right: 0;
+   }
+
    .header-buttons {
-       float: right;
+       margin: 0;
+   }
+
+   .header-buttons .open-order {
+       margin: 0;
    }
 }
