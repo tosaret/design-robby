@@ -614,4 +614,8 @@ button.primary {
    .description-content {
        padding: 2rem;
    }
+
+   .header-buttons {
+       float: right;
+   }
 }
