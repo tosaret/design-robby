@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="header-left">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="header-right btn-group">
+            <button
+              type="button"
+              class="primary"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="icon icon-chat"></i>
+              <span class="d-none d-md-inline-block"
+                >TALK TO A REAL PERSON</span
+              >
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end get-help-dropdown">
+              <li>
+                <h6>Get Help</h6>
+                <p><strong>Talk to Our Experts Now</strong></p>
+                <p>
+                  <strong>Monday - Thursday:</strong> 8:00AM - 10:00PM EST
+                  <br />
+                  <strong>Friday:</strong> 8:00AM - 9:00PM EST <br />
+                  <strong>Saturday & Sunday:</strong> 8:00AM - 5:00PM EST
+                </p>
+              </li>
+              <li>
+                <a href="#" class="btn btn-primary">
+                  <i class="fa fa-comments-o" aria-hidden="true"></i> CHAT
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-primary">
+                  <i class="fa fa-phone" aria-hidden="true"></i> CALL
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="cart">
+      <h2 class="text-center d-none d-lg-block">Shopping Cart</h2>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 order-last order-lg-first">
+            <div class="content-block">
+              <h5>Your Cart</h5>
+              <hr />
+              <div class="cart-item">
+                <div class="row">
+                  <div class="col-sm-3 text-center">
+                    <img
+                      src="./assets/images/shirt.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>RushOrderTees RushOrderTees Classic Tee</strong>
+                    <p>Black | Screen Printing</p>
+                    <p>Qty 9 @ $8.99 each</p>
+                    <p>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#colorModal"
+                      >
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        Edit Sizes
+                      </a>
+                      |
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#colorModal"
+                      >
+                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        Add Another Color
+                      </a>
+                      |
+                      <a href="#">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        Remove
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-sm-3 text-end item-price">
+                    <strong>$213.99</strong>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="cart-item">
+                <div class="row">
+                  <div class="col-sm-3 text-center">
+                    <img
+                      src="./assets/images/shirt.jpeg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>RushOrderTees RushOrderTees Classic Tee</strong>
+                    <p>Black | Screen Printing</p>
+                    <p>Qty 9 @ $8.99 each</p>
+                    <p>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#colorModal"
+                      >
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        Edit Sizes
+                      </a>
+                      |
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#colorModal"
+                      >
+                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        Add Another Color
+                      </a>
+                      |
+                      <a href="#">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        Remove
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-sm-3 text-end item-price">
+                    <strong>$213.99</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="order-collapse d-lg-none">
+              <a
+                class="dropdown-toggle"
+                data-bs-toggle="collapse"
+                href="#mobileCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="mobileCollapse"
+              >
+                Order Summary (1 QTY | $28.99)
+              </a>
+            </div>
+            <div
+              class="order-summary-collapse collapse dont-collapse-lg"
+              id="mobileCollapse"
+            >
+              <div class="content-block delivery">
+                <h5>Delivery options</h5>
+                <hr />
+                <label for="option1">
+                  <div class="row">
+                    <div class="col-1">
+                      <input type="radio" id="option1" checked />
+                    </div>
+                    <div class="col-8">
+                      <strong>Jul 29 - Aug 3</strong>
+                      <div>10 Business Days</div>
+                    </div>
+                    <div class="col-2 text-end">FREE</div>
+                  </div>
+                </label>
+                <hr />
+                <label for="option2">
+                  <div class="row">
+                    <div class="col-1"><input type="radio" id="option2" /></div>
+                    <div class="col-8">
+                      <strong>Jul 29 - Aug 1</strong>
+                      <div>8 Business Days</div>
+                    </div>
+                    <div class="col-2 text-end">$8.99 each</div>
+                  </div>
+                </label>
+                <hr />
+                <label for="option3">
+                  <div class="row">
+                    <div class="col-1"><input type="radio" id="option3" /></div>
+                    <div class="col-8">
+                      <strong>Jul 29 - Aug 1</strong>
+                      <div>8 Business Days</div>
+                    </div>
+                    <div class="col-2 text-end">$8.99 each</div>
+                  </div>
+                </label>
+                <hr />
+                <label for="option4">
+                  <div class="row">
+                    <div class="col-1"><input type="radio" id="option4" /></div>
+                    <div class="col-8">
+                      <strong>Jul 29 - Aug 1</strong>
+                      <div>8 Business Days</div>
+                    </div>
+                    <div class="col-2 text-end">$8.99 each</div>
+                  </div>
+                </label>
+              </div>
+              <div class="content-block summary">
+                <h5>Order Summary</h5>
+                <hr />
+                <div class="row">
+                  <div class="col-9">Subtotal (1 item)</div>
+                  <div class="col-3 text-end">$28.07</div>
+                </div>
+                <div class="row">
+                  <div class="col-9">Free Delivery Jul 29 - Aug 3</div>
+                  <div class="col-3 text-end">$0.00</div>
+                </div>
+                <div class="row">
+                  <div class="col-9">Tax (To be Calculated)</div>
+                  <div class="col-3 text-end">- -</div>
+                </div>
+                <hr />
+                <div class="row">
+                  <div class="col-9"><strong>Total</strong></div>
+                  <div class="col-3 text-end"><strong>$28.07</strong></div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted">
+      <div class="text-center">
+        <h5>Trusted by over 1,000,000 customers and counting.</h5>
+        <p>
+          <img src="./assets/images/norton.png" alt="" />
+          <img src="./assets/images/bbb.png" alt="" />
+          <img src="./assets/images/mcafee.png" alt="" />
+          <img src="./assets/images/stripe.png" alt="" />
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-center">© 2022 CustomInk, LLC. All rights reserved.</p>
+      <p class="text-center">
+        Custom Ink is a registered trademark of CustomInk LLC. "T-shirts Unite!"
+        and the "Inky" octopus are trademarks of CustomInk, LLC.
+      </p>
+    </footer>
+
+    <div
+      class="modal color-modal"
+      tabindex="-1"
+      id="colorModal"
+      aria-labelledby="colorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Another Color</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Add another color for:</strong></p>
+            <p>Hanes Authentic Crewneck Short Sleeve T-shirt</p>
+            <div class="color-list">
+              <div class="choose-color" style="background-color: black"></div>
+              <div class="choose-color" style="background-color: blue"></div>
+              <div class="choose-color" style="background-color: pink"></div>
+              <div class="choose-color" style="background-color: green"></div>
+              <div class="choose-color" style="background-color: white"></div>
+              <div class="choose-color" style="background-color: red"></div>
+              <div class="choose-color" style="background-color: yellow"></div>
+              <div class="choose-color" style="background-color: violet"></div>
+              <div class="choose-color" style="background-color: orange"></div>
+              <div class="choose-color" style="background-color: green"></div>
+            </div>
+            <p>
+              Color choices for any size order More choices for orders totaling
+              6 or more (5 more items needed)
+            </p>
+            <p>Selected Color: White</p>
+            <hr />
+            <p><strong>Enter Quantities and Sizes:</strong></p>
+            <div>Youth Sizes:</div>
+            <div class="sizes">
+              <label for="sizeyXs">
+                <div>YXS</div>
+                <input type="text" name="sizeyXs" id="sizeyXs" />
+              </label>
+              <label for="sizeyS">
+                <div>YS</div>
+                <input type="text" name="sizeyS" id="sizeyS" />
+              </label>
+              <label for="sizeyM">
+                <div>YM</div>
+                <input type="text" name="sizeyM" id="sizeyM" />
+              </label>
+              <label for="sizeyL">
+                <div>YL</div>
+                <input type="text" name="sizeyL" id="sizeyL" />
+              </label>
+              <label for="sizeyXl">
+                <div>YXL</div>
+                <input type="text" name="sizeyXl" id="sizeyXl" />
+              </label>
+            </div>
+            <br />
+            <div>Adult Sizes:</div>
+            <div class="sizes">
+              <label for="sizeXs">
+                <div>XS</div>
+                <input type="text" name="sizeXs" id="sizeXs" />
+              </label>
+              <label for="sizeS">
+                <div>S</div>
+                <input type="text" name="sizeS" id="sizeS" />
+              </label>
+              <label for="sizeM">
+                <div>M</div>
+                <input type="text" name="sizeM" id="sizeM" />
+              </label>
+              <label for="sizeL">
+                <div>L</div>
+                <input type="text" name="sizeL" id="sizeL" />
+              </label>
+              <label for="sizeXl">
+                <div>XL</div>
+                <input type="text" name="sizeXl" id="sizeXl" />
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
