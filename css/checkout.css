@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
 html,
 body {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  font-family: sharpsans, helvetica, arial, Trebuchet MS, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #4a4a4a;
 }
 
@@ -11,7 +13,17 @@ body {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
+}
+
+a {
+  color: #f93d00;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f93d00;
 }
 
 .btn-primary,
@@ -68,6 +80,28 @@ header {
 .get-help-dropdown a.btn {
   width: 100%;
   margin-top: 10px;
+  border-radius: 50px;
+}
+
+.add-review {
+  background: #fff url(../assets/icons/review.svg) 22px 20px no-repeat;
+  background-size: 35px;
+  padding-left: 80px;
+  font-size: 14px;
+}
+
+.add-review h5 {
+  margin: 0;
+}
+
+.add-review textarea {
+  margin-top: 10px;
+}
+
+.cart-item .cart-item-header {
+  background: rgba(0, 0, 0, 0.04);
+  margin: 0 0 10px;
+  line-height: 30px;
 }
 
 .cart-item img {
@@ -80,8 +114,6 @@ header {
 
 .cart-item a {
   font-size: 14px;
-  color: #f93d00;
-  text-decoration: none;
 }
 
 .color-modal .color-list {
@@ -113,6 +145,19 @@ header {
   text-align: center;
 }
 
+.design-approval label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.design-approval input {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  left: 5px;
+}
+
 .cart {
   margin-top: 50px;
 }
@@ -137,6 +182,24 @@ header {
   text-transform: uppercase;
   border-radius: 2px;
   margin-bottom: 40px;
+  border-radius: 50px;
+}
+
+.cart .affirm {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.promo-form .form-actions {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.promo-form .form-actions .btn-secondary {
+  background: #fff;
+  color: #333;
+  opacity: 0.7;
+  margin-right: 5px;
 }
 
 .trusted {
@@ -146,6 +209,21 @@ header {
 .trusted img {
   margin: 0 15px;
   max-height: 70px;
+}
+
+.modal-addproduct .add-item {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+
+.modal-addproduct .add-item img {
+  margin-bottom: 15px;
+}
+
+.modal-addproduct .add-item button {
+  border-radius: 40px;
+  width: 100%;
 }
 
 footer {
